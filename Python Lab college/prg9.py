@@ -1,0 +1,7 @@
+i1=(int)(input("Enter the no of pizzas:"))
+i2=(int)(input("Enter the no of puffs:"))
+i3=(int)(input("Enter the no of cool drinks:"))
+print("No of pizzas bought:",i1)
+print("No of puffs bought:",i2)
+print("No of cool drinks bought:",i3)
+print("Total amount spent:Rs",i1*100+i2*20+i3*10)

@@ -1,0 +1,6 @@
+x1<-as.numeric(readline("Enter the x co-ordinate of pt 1:"))
+y1<-as.numeric(readline("Enter the y co-ordinate of pt 1:"))
+x2<-as.numeric(readline("Enter the x co-ordinate of pt 2:"))
+y2<-as.numeric(readline("Enter the y co-ordinate of pt 2:"))
+dist=sqrt((x2-x1)**2+(y2-y1)**2)
+cat("Distance is:",dist)
