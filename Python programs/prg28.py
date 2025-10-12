@@ -32,5 +32,5 @@ Lst=[10,5,4,1,8,9,7,6,3,2]
 sort=sorted(Lst)
 print("Original list is:",Lst)
 print("Mean of list is:",mean_func(Lst))
-print("Meadian of list is:",median_func(Lst))
+print("Median of list is:",median_func(Lst))
 print("Mode of list is:",mode_func(Lst))
