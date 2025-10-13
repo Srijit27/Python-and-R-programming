@@ -1,0 +1,3 @@
+This is my 8th lab day in Python
+I am going to perform Regex today
+I am very excited about it
