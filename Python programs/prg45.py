@@ -23,9 +23,9 @@ print("\nMatrix after sorting each column is:\n",p)
 
 # Perform statistical operations 
 print("\nChoose a statistical operation:")
-print("Options → min, max, range, percentile, mean, median, variance, std")
+print("Options → Min, Max, Range, Percentile, Mean, Median, Variance, Std")
 
-ch=input("Enter your choice:").strip().lower()
+ch=input("Enter your choice:").strip()
 
 # Flatten matrix for global statistics
 flat_p=p.flatten()
@@ -44,7 +44,7 @@ elif(ch=='Median'):
     print("Median:",np.median(flat_p))
 elif(ch=='Variance'):
     print("Variance:",np.var(flat_p))
-elif(ch=='std'):
+elif(ch=='Std'):
     print("Standard Deviation:",np.std(flat_p))
 else:
     print("Invalid choice! Please enter one from the given options")
