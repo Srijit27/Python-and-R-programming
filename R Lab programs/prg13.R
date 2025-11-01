@@ -1,0 +1,19 @@
+df<-data.frame(
+  id=c(1,2,3,4,5),
+  name=c("AAA","BBB","CCC","DDD","EEE"),
+  SUB1=c(56,70,90,65,96),
+  SUB2=c(57,70,80,70,97),
+  SUB3=c(58,70,70,50,98)
+)
+df$SUB2[df$name=="BBB"]<-NA
+df$SUB3[df$name=="DDD"]<-NA
+df$SUB1[df$name=="EEE"]<-NA
+subjects<-df[,c("SUB1","SUB2","SUB3")]
+stat<-data.frame(
+  Name=colnames(subjects),
+  Mean=sapply(subjects,mean,na.rm=TRUE),
+  Median=sapply(subjects,median,na.rm=TRUE),
+  StdDev=sapply(subjects,sd,na.rm=TRUE),
+  Variance=sapply(subjects,var,na.rm=TRUE)
+)
+print(stat)
