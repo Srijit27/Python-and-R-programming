@@ -4,7 +4,7 @@ def max_min(*args):
         return
     min=args[0]  
     max=args[0]
-    for x in args[1:]:
+    for x in args[1:len(args)]:
         if x<min:
             min=x
         if x>max:
